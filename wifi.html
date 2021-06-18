@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rail Yatra | Wifi services at station information</title>
+        <link rel="stylesheet" href="wifi.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // images slideshow
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+    </head>
+    <body onload="return plusSlides() && currentSlide() && showSlides()">
+        <div class="marque">
+            <marquee>For Queries contact Railwire Customer Care Number 1800-103-9139 (toll free).Here all information regarding wifi network at station are as per Railwire website.</marquee>
+        </div>
+        <div class="nav">
+            <h2 class="h">Wifi at Station</h2>
+            <h3>Connecting Staion To Station...</h3>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/wifi-railway-stations-istock-062019.jpg" width="100%" height="400px" style="opacity: 0.9;">
+              <div class="text"><b>Bringing High Speed WIFI at Railway Stations.</b>
+                <p><b>5640 + Railway Stations are now WIFI zones.</b></p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/Internet.jpg" height="400" width="100%" style="opacity: 0.9;">
+              <div class="text"><h2>Broadband Service Provider</h2>
+            <h4>A Retail Broadband,initiative of RAILTEL COPERATION(Ministry Of Railway)</h4></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/mar20-coronavirus-safety-tips-1800x900.png" height="400px" width="100%" style="opacity: 0.9;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/chhetah.jpg" height="400px" width="100%" style="opacity: 0.9;">
+                <div class="text">Delivering Broadband-On-Demand
+                    <p>Through efficient Express Network</p>
+                </div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <div class="body_image">
+            <img src="images/Internet.jpg" height="300px" width="100%" style= "opacity: 0.5;">
+            <h3 class="image_text">"RailTel to connect every cable-connected-home. RailWire to deliver Broadband-on-Demand to all such homes"</h3>
+            <h4 class="image_text1">India's National Telecom Policy 2012 has the vision Broadband on Demand. RailWire has positioned itself to realize this vision. We will leverage
+                 our Telecom infrastructure to enable all citizens and businesses, both in rural & urban areas, to participate in the internet & web economy. RailWire will deliver to homes & offices internet services with 
+                 unlimited bandwidth, education & healthcare services, entertainment & e-Governance services.</h4>
+        </div>
+        <div class="about">
+            <h1 class="about-us">About Us</h1>
+            <p class="body-about-us">RailWire focuses on pure play broadband and VPN services. RailWire offers content & application driven network. RailWire aims to become a hub of local information and a tool for rendering communication, infotainment, education, health and community services to the masses.
+                 Education, health and entertainment will be the primary verticals to be rolled-out in the Content Delivery Network (CDN). Since the roll-out will harness the entrepreneurial energies of several hundreds of Access Network Providers (ANPs) and MSPs of every Circle/State, this model will 
+                 scale-up and spread fast to achieve the broadband penetration desired by the government.</p>
+            <h4 class="broadband">Broadband</h4>
+            <p class="body-about-us">India’s National Telecom Policy 2012 has the vision Broadband on Demand. This would mean leveraging Telecom infrastructure to enable all citizens and businesses, both in rural & urban areas, to participate in the internet &web economy. This will ensure equitable & inclusive development across the nation. RailWire has positioned itself to realize this vision.
+
+                RailWire has begun its country-wide drive to align with about 96,000 Access Network Providers to deliver internet services with unlimited bandwidth, education & healthcare services, entertainment & e-Governance services to homes and offices.
+                
+                A nation-wide broadband Telecom and multimedia network, riding on RailTel infrastructure & its high performance network. RailTel has the SDH/WDM backbone optical transport network covering more than 400 cities & 42,000 kilometres of high-quality optical fibre cable across the country. Multiple STM-16 (n x 2.5 Gbps) connectivity. RailTel has implemented ultra-high capacity DWDM network 
+                over 10,000 RKM to provide 400 Gbps, further upgradable to 800 Gbps in future.
+            </p>
+            <h4 class="broadband">Healthcare Services</h4> 
+            <p class="body-about-us">
+                Every person´s health & medical records are made available online for access by the doctor. Clinics, hospitals and independent medical practitioners can now own an electronic health record system incorporating both clinic management & patient management. Patients can now maintain their own Personal Health Records, integrated with video-conferencing and multi-parameter devices for vital 
+                sign measurements. It gives you automatic health calculators, e-Prescription generation and allows you to consult with doctors & specialists worldwide. This health management system can also be integrated with the UIDAI &NPR systems.
+            </p>
+        </div>
+        
+        <h1 class="title">News</h1>
+        <div class="Info-grid">
+            <div class="grid">
+                <p>September 28,2020</p>
+                <img src="images/freewifi.jpg" height="200px" width="250px">
+                <h4 class="headline">Bringing the Internet to more Indians-starting with 10 million rail passengers a day</h4>
+                <p class="paragraph">The Malappuram municipality has become the first civic body in the country to offer free Wi-Fi connectivity to people living or working there. The free Internet Connectivity brought yet another  laurel for Malappuram in successive years after it became the first ISO certified municipality in the country.</p>
+            </div>
+        </div>
+
+        <div class="Info-grid">
+            <div class="grid">
+                <p>August 23,2020</p>
+                <img src="images/news.jpg" height="200px" width="250px">
+                <h4 class="headling">Malappuram rides on free WIFI wave</h4>
+                <p class="paragraph">When I was a student,I relished the day-long railway journey I would make from Chennai Central Station(now madras central) to IIT Kharagpur.</p>
+            </div>
+        </div>   
+        
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rail Yatra | Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // images slideshow
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+    </head>
+    <body onload="return plusSlides() && currentSlide() && showSlides()">
+        <div id="nav1">
+            <h1>Gallery</h1>
+        </div>
+        <div class="clear"></div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/maxresdefault.jpg" width="100%" height="400px" style="opacity: 0.9;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/cd7e234c65a54645f2b75054fa1cb1a3.jpg" height="400" width="100%" >
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/dc-Cover-2hnbd8lk49fo5tks8d7cvkve11-20170523061729.Medi.jpeg" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Palace-on-Wheels-Train-Image.jpg" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Dessert-Queen-.jpg" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/img20170610182811122.jpg" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/New_delhi_railway_station_in_tricolors.jpg" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/chennai_central_505x264_030619074414.webp" height="400px" width="100%" >
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/10701991_1491589061104823_7905045462017715602_n__1_-1024x683.jpg" height="400px" width="100%" >
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        </div>
+        <h3  class="heading">Nilgiri Mountain Railway</h3>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Train-on-Nilgiri-Railway-Track.webp" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/240px-Nilgiri_Mountain_Railways,_Hillgrove_Station,_India.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Nilgiri-Mountain-Railway.webp" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/shareiq_1024_490_1421937307.353607.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Coonoor-Blue-Heritage.webp" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Nilgiri-mountain-railway-A-UNESCO-heritage-site.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <h3  class="heading">Darjeeling Himalayan Railways</h3>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/1200px-DarjeelingTrainFruitshopCrop.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Darjeeling-Himalayan-Railway-1.webp" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Trainjpg.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/blissfulindiatravel.com_.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/darjeeling-himalayn-railway-780.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/india-darjeeling-himalayan-railway.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <h3  class="heading">Royal Indian Trains</h3>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/download.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/deccan-odyssey-train-pic1.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/665256-palace-on-wheels-dna.webp" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/hqdefault.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/The-Golden-Chariot.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Royal-Orient-Train.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <h3  class="heading">Metropolitian Railway Stations</h3>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/indian-railways-to-monetise-land-around-new-delhi-station.webp" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/story_cst,-flickr,-arian-zwegers_647_052516011529.jpg" height="250px" width="320px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Howrah-Junction-Kolkata.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/263px-Chennai_Central_side.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/Chandigarh-railway-Station.jpg" height="250px" width="320px">
+            </div>
+        </div>
+        <div class="fame-grid">
+            <div class="grid">
+                <img src="images/128385-murqnavxkc-1570016766.jpg" height="250px" width="320px">
+            </div>
+        </div>
+    </body>
+</html>    

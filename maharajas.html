@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maharaja's Express</title>
+        <link rel="stylesheet" href="maharajas.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // images slideshow
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            
+        </script>
+    </head>
+    <body onload="return plusSlides() && currentSlide() && showSlides()">
+        <div id="nav1">
+            <img src=" images/maharaja_logo.png" id="logo1" height="110px" width="140px">
+            <nav>
+                <ul class="nav1">
+                    <li><i class="fa fa-phone" aria-hidden="true"> +91 9717635915</i></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true">maharajas@irctc.com</i></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="clear"></div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/1478258000581c6d50cfa51.jpg" width="100%" height="400px" style="opacity: 0.9;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/word-image-16.jpeg" height="400" width="100%" style="opacity: 0.9;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/127115-leqkpbjjpj-1568088629.jpg" height="400px" width="100%" style="opacity: 0.9;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/ME-Rajah-club.jpg" height="400px" width="100%" style="opacity: 0.9;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <div class="notice">
+            <h3 class="head">NOTICE</h3>
+            <p class="para">In line with government guidelines for safety & welfare of our guests, IRCTC has decided to cancel the last 
+                4 departures of previous season 2019-20 and 13 departures from October to December 2020 of current season 2020-21 of Maharajas' Express.
+                The guests have an option to reschedule their trips to next seasons: 2020-21, 2021-22 and 2022-23 or ask for full refund without any cancellation charges.
+                This cancellation is to mitigate The spread of the Covid-19.For any further clarifications, you may contact us: <b>Mobile No: +91 9717635915 Email: maharajas@irctc.com</b></p>
+        </div>
+        <div class="first-info">
+            <h3 class="head1">Maharajas’ Express</h3>
+            <p class="para1">World's leading luxury train in India</p>
+            <p class="para2">Welcome aboard the Maharajas' Express, bestowed the "World's Leading Luxury Train" award at the World Travel Awards for seven consecutive years from 2012 to 2018.
+                The Maharajas' Express has redefined the luxury travel experience by offering guests the opportunity to explore fabled destinations providing a glimpse of rich cultural heritage
+                of Incredible India which will leave you with fond memories of this train journey to be cherished.</p>
+        </div>
+        <h1 class="head2">Hall Of Fame</h1>
+        <p class="para3">Within a very short span of time since inception, Maharajas' Express has been fortunate to be recognized & receive many awards. We thank all our well- wishers for the support extended to us.</p>
+         
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>World Travel Award 2017</b>for the category<b>"Worlds Leading Luxury Train"</b></p>
+                <img src="images/worlds-leading-luxury-train-2017.jpg" height="300px" width="150px">
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>World Travel Award 2016</b>for the category<b>"Worlds Leading Luxury Train"</b></p>
+                <img src="images/worlds-leading-luxury-train-2016.jpg " height="300px" width="150px" >
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>Seven Stars 2016</b>for the category<b>"Luxury Hospitality And Life Style Awards"</b></p>
+                <img src="images/seven_star_award-2016.jpg " height="300px" width="150px" >
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>World Travel Award 2015</b>for the category<b>"Worlds Leading Luxury Train"</b></p>
+                <img src="images/seven_star_award.jpg " height="300px" width="150px" >
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>CNBC AWAAZ Travel Awards2015</b>for Best Luxury Train</p>
+                <img src="images/award6.jpg " height="300px" width="150px" >
+            </div>
+        </div>
+
+        <div class="fame-grid">
+            <div class="grid">
+                <p>Winner of the <b>World Travel Award 2013</b>for the category<b>"Worlds Leading Luxury Train"</b></p>
+                <img src="images/award1.jpg " height="300px" width="150px" >
+            </div>
+        </div>
+
+        <div>
+            <h3 class="head2">The Maharajas' Express : Indian Luxury Train</h3>
+            <p class="para3">Indian Maharajas' Train is a luxury train in India introduced by Indian Railways catering and
+                Tourism Corporation (IRCTC). A traveler gets an amazing opportunity to Experience royalty but running on wheels. 
+                Indian Luxury Train has four cabins Deluxe Cabin, Presidential Suite, Suite and Junior Suite. It also has Lounge Bar 
+                and Restaurants. All cabins are designed so beautifully that if one sees through the window, one can enjoy beautiful 
+                landscapes. Indian Luxury Train has allover red carpet and interiors are designed keeping in mind the Indian Royal Heritage.</p>
+        <div>
+            <h3 class="head2">Why The Maharajas' Express Luxury Charter Train Tours in India</h3>
+            <p class="para3">Maharajas' Express Train Tour India is unique and journey to be cherished forever. It recreates the Lifestyle 
+                of Royal Era. Maharajas' Express Train Tours India is of approximately of week s duration where one can see Treasures of India, 
+                Indian Splendor, and Heritage of India etc. Luxury Charter Tours India is provided to clients from across the globe. Also these 
+                tours are specially designed for our esteemed clients who look forward for value for money, comfort and luxury.</p>
+            <p class="para3">Luxury Train in India has got many awards for its gracious hospitality. It offers the traveler luxury and comfort. 
+                The Presidential Suite is called Navratna which means Nine Precious Jewels. Luxury Train in India was named after the precious 
+                jewels of different Maharajas (Kings). . Indian Maharaja Train has 14 Guest Carriages namely Moti (Pearl), Manik (Ruby), Heera (Diamond), 
+                Panna (Emerald), Neelam (Blue Sapphire) etc.</p>
+         </div>
+</div>
+    </body>
+</html>    

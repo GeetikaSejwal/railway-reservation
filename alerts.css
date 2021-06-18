@@ -1,0 +1,54 @@
+
+.h1{
+    font-family: Arial;
+    text-align: center;
+}
+.p{
+    font-family: Arial;
+    text-align: center;
+}
+.div1{
+    font-family: Arial;
+    background-color: gainsboro;
+    padding: 5px;
+}
+.div2{
+    font-family: Arial;
+    background-color: beige;
+    padding: 5px;
+}
+.div3{
+    font-family: Arial;
+    color: red;
+    background-color: beige;
+    padding: 5px;
+}
+.footer {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    background-color:gainsboro;
+    width: 100%;
+    text-align: center;
+  }
+  .clearfooter {
+    height: 100px;
+    clear: both;
+  }
+  .sub-list{
+    display: none;
+  }
+  .nav  li:hover .sub-list{
+    display: block;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: -10px;
+    height: 50px;
+  }
+  .nav  li:hover .sub-list ul{
+    display: block;
+  }
+  .nav  li:hover .sub-list ul li{
+    width: 100px;
+    margin-right: 6px;
+  }

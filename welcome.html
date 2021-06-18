@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rail Yatra | Book your railway tickets easily</title>
+        <link rel="stylesheet" href="welcome.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- time  -->
+        <script>
+            //  to make date column 
+            function myFunction() {
+                var x = document.createElement("INPUT");
+                x.setAttribute("type", "date");
+                x.setAttribute("value", "2014-02-09");
+                document.body.appendChild(x);
+            }
+
+            //form validation
+            function formValidate(){
+                var from= document.getElementById('from')
+                var to= document.getElementById('to')
+
+               if(from.value.trim()==''){
+                   alert('Staion must be filled out')
+                   from.style.border='2px solid red';
+                   document.getElementById('lb1').style.visibility='visible'
+                   return false;
+               }
+                else if(to.value.trim()==''){
+                    alert('Station must be filled')
+                    to.style.border='2px solid red';
+                   document.getElementById('lb2').style.visibility='visible'
+                    return false;
+                }
+                else{
+                    return true
+                }
+            }
+            // to view results of the form
+            function results(){
+                var from = document.getElementById('from').value;
+                var to = document.getElementById('to').value;
+                var date = document.getElementById('date').value;
+                var list = document.getElementById('list').value;
+
+                document.write("<h1>Thank you for Using the services of Rail Yatra.</h1>");
+                document.write("<h1>Your Ticket is successfully booked</h1>");
+                document.write("<h3> here is your ticket information actual ticket will be mailed to you shortly...</h3>")
+                document.write(from + " " + "to"+ " " + to + "<br>")
+                document.write(date + " " + list)
+                document.write("<h2>Rail yatra wishes you a very comfortable and safe journey</h2>")
+                document.write("<h2>Please maintain proper social distancing at stations as well as in train and please maintain proper hygiene")
+            }
+        </script>
+    </head>
+        <body onload="startTime()">
+        <div id="nav">
+            <!-- logo image -->
+            <img src=" images/1200px-Indian_Railways.svg.png" id="logo" height="100" width="100">
+             <nav>     <!--navigation bar -->
+                <ul class="nav">
+                    <li><a href="alerts.html">Alerts</a></li> <!--Direct link for alert.html-->
+                    <li>Meals @ Trains
+                        <div class="sub-list">    <!--Sub-list for meals.html-->
+                            <ul>
+                                <li><a href="meals.html" target="_blank">Standard Meals Rates</a></li>
+                        </div>
+                    </li>
+
+                    <li>Stations
+                        <div class="sub-list1">
+                            <ul>
+                                <li><a href="wifi.html" target="_blank">Wifi @ Stations</a></li>
+                            </ul>  
+                        </div>
+                    </li>
+                    <li>Trains
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="maharajas.html" target="_blank">Special Trains</a></li>
+                            </ul>  
+                        </div>
+                    </li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+        <marquee>Welcome to Rail Yatra. Due to COVID-19 all catering services are been shut off till further notice inconvenience is deeply regretted. Please maintain Social distancing at stations and adhere to the safety norms of IRCTC. Happy Journey!!!</marquee>
+        <div class="header">
+            <img src="images/indian-railways-history.jpg" height="600px" width="100%">
+            <h1 id="image-text">Indian Railways</h1>
+            <h2 id="image-text1">Safety | Security | Punctuality</h2>
+
+            <form  onsubmit="return formValidate() && results()" class="container" method="GET">
+            <h1 class="h">Book Your Ticket</h1>
+            <img src="images/book_train.png" height="50px" width="50px" class="book_train">
+            <br>
+              <input type="text" placeholder="Enter Starting Station" id="from">
+              <label id="lb1" style="color: red; visibility: hidden;">Invalid Station</label>
+              <input type="text"  placeholder="Enter Destination Station" id="to" >
+              <label id="lb2" style="color: red; visibility: hidden;">Invalid Station</label>
+              <br>
+              <label for="date">date*</label>
+              <input type="date" name="date" id="date" required><br><br>
+              <label for="list">Class</label>
+              <select name="list" size="1" id="list" required>
+                    <option value="All Classes">All Classes</option>
+                    <option value="Anubhuti Class(EA)">Anubhuti Class(EA)</option>
+                    <option value="AC First Class(1A)">AC First Class(1A)</option>
+                    <option value="Exec. Chair Car(EC)">Exec. Chair Car(EC)</option>
+                    <option value="AC 2 Tier(2A)">AC 2 Tier(2A)</option>
+                    <option value="First Class(FC)">First Class(FC)</option>
+                    <option value="AC 3 Tier(3A)">AC 3 Tier(3A)</option>
+                    <option value="AC 3 Economy(3E)">AC 3 Economy(3E)</option>
+                    <option value="AC Chair Car(CC)">AC Chair Car(CC)</option>
+                    <option value="Sleeper(SL)">Sleeper(SL)</option>
+                    <option value="Second Sitting(2S)">Second Sitting(2S)</option>
+                </select><br><br>
+              <input type="submit" class="btn" value="Book Ticket"></button>
+            </form>
+            <div class="bdy">
+                <p>Here are some of our services...</p>
+            </div>
+                <div id="lnk">
+                    <ul class="lnk">
+                        
+                        <li><a href="meals.html"><img src="images/food.png" height="50px" width="50px">E-Catering</a></li>
+                        <li><a href="gallery.html "><img src="images/gallery.png" height="50px" width="50px">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="holiday">Holidays</p>
+            <div class="holiday-grid">
+                <div class="grid">
+                    <p>Maharaja's Express</p>
+                    <img src="images/maharaja.jpg" height="200px" width="250px">
+                    <p>Redefining Royalty, Luxury and Comfort, Maharajas’ express takes you on a sojourn to the era of 
+                       bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities 
+                       are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” 
+                       by World Travel Awards consecutively for last six years.</p>
+                    <img src="images/rang-mahal-restaurant-3.jpg" height="200px" width="250px">
+                </div>
+            </div>
+            
+            <div class="holiday-grid">
+                <div class="grid">
+                    <p>Heritage Cities Packages</p>
+                    <img src="images/jaipur.jpg" height="200px" width="250px">
+                    <p>Best deals in Heritage Cities packages, handpicked by Rail Yatra, for Varanasi, Delhi, Amritsar, Patna, 
+                       Pune, Agra, Bikaner, Gujarat, Madhya Pradesh, Sawai Madhopur, Jaipur, Udaipur etc. The packages are inclusive
+                       of sightseeing, meals, and  medical insurance to give you a hassle-free and memorable experience.</p>
+                       <br><br>
+                    <img src="images/Nalanda_University_India_ruins.jpg" height="200px" width="250px">
+                </div>
+            </div>
+
+            <div class="holiday-grid">
+                <div class="grid">
+                    <p>Pilgrimage Packages</p>
+                    <img src="images/Badrinath_Temple_front_view.jpg" height="200px" width="250px">
+                    <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller
+                       wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, 
+                       Serene lakes or Picturesque Islands, Rail Yatra has it all. Discover Pilgrimage through Rail Yatra!</p>
+                    <br><br>
+                       <img src="images/vaishno-devi-temple.jpg" height="200px" width="250px">
+                </div>
+            </div>
+
+            <div class="holiday-grid1">
+                <div class="grid1">
+                    <p>Buddhist Circuit Tourist Train</p>
+                    <img src="images/Buddha_Banner.jpg" height="200px" width="250px">
+                    <p>India, the country where Buddhism originated has rich memories of the Buddhist legacy. As part of its drive towards 
+                       austerity, the only kind of art & architecture that it supported were Stupas, Chaityas & Viharas. Buddhist Train
+                       India will help you visit all these places up close for a truly religious experience.</p>
+                    <br>
+                    <img src="images/buddh.jpeg" height="200px" width="250px">
+                </div>
+            </div>
+
+            <div class="holiday-grid1">
+                <div class="grid1">
+                    <p>Himalayas Packages</p>
+                    <img src="images/Machhapuchhare-Great-Himalaya-Range.jpg" height="200px" width="250px">
+                    <p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri
+                       Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi,
+                       Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+                    <img src="images/5e7860c97a43e.jpg" height="200px" width="250px">
+               </div>
+               <div class="POPmain"style="display: none;"> 
+                <div id="popup">  
+                    <h1>Alert</h1>
+                    <p>
+                        Hon'ble Prime Minister message on "Public Health Response to COVID-19: Campaign for COVID-Appropriate Behaviour". Wear Mask, Follow Physical Distancing, Maintain Hand Hygine.
+
+                    For trains with Pantry Car, Cooked Food shall not be available in trains. Only Packed Items, Ready to eat, Packaged drinking water and Tea/Coffee/Beverages will be available on limited trains and station catering units.Please click here for List of trains.
+
+                    For trains without Pantry Car, No food will be provided in train. Passengers should make their own arrangement for food and drinking water for rail travel. Please click here for List of trains.
+
+                    COVID 19 Alert:
+
+                    During COVID-19, You are Responsible for Your Own Health:
+
+                    Use Face Mask, Maintain Social Distancing and Wash Hands Frequently
+
+                    Indian Railways has restarted passenger train operations from 12th May, 2020, initially with 15 pairs of trains (30 return journeys).
+
+                    Dear passengers, it is advisable to download Aarogya Setu App on your mobile phone, before commencing Rail journey.
+                    
+                    All Passenger to kindly note that on arrival at their destination, the traveling passengers will have to adhere to such health protocols as are prescribed by the destination State/UT. Click Here to see state wise advisory on Arrival(As available). For other states, State Govt websites may be visited to ascertain the same.
+                    
+                    For trains cancelled till 30th June 2020 by Indian Railways, full refund will be provided automatically by IRCTC. Users need not cancel their e-tickets. Full fare will be credited back into users accounts from which payment was made.
+                    
+                    Catering Service is not available and catering charges not included in the fare.
+                    
+                    No blanket and linen shall be provided in the train.
+                    
+                    There are Maximum Waiting List Limits in the PRS booking system for which Waitlisted Tickets can be issued after all confirmed tickets are exhausted. Your ticket booking request may get declined as the Maximum Waiting List Limit may be reached in the booking system by the time payment success response is received from your bank. In such case, your deducted amount will be refunded back, without any deductions, to your bank account in 3-5 working days. Inconvenience caused is regretted.
+                    </p>
+                    <button class= "submitId btn btn-primary text-center font-weight-bold mt-5">OK</button> 
+                </div> 
+            </div>
+            <div class="clearfooter"></div>
+            <div class="footer">
+                <p>For more information about trains refer:<a href="www.irctc.co.in/nget/train-search">www.irctc.co.in</a></p>
+                <p>Connect with Us:<a href="www.facebook.com/IRCTCofficial/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>0755-6610661, 0755-4090600</p>
+            </div>
+            <script src= "https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity= "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script> 
+  
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script> 
+    <script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+                integrity= 
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+                crossorigin="anonymous"></script> 
+        <script> 
+            $(document).ready(function () { 
+                
+                setTimeout(function () { 
+                    $(".POPmain").css("display", "block"); 
+                }, 100); 
+            }); 
+            $(".submitId").click(function () { 
+                $(".POPmain").css("display", "none"); 
+            }); 
+        </script> 
+        </body>
+</html>

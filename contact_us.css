@@ -1,0 +1,24 @@
+body{
+    padding-top: 20px;
+    text-align: center;
+}
+.list li{
+    padding: 10px;
+    list-style: none;
+}
+.div1{
+    background-color: blanchedalmond;
+    font-size: 30px;
+}
+.div2{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: cornsilk;
+}
+.img1{
+    float: left;
+}
+.img2{
+    float: right;
+}

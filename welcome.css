@@ -1,0 +1,280 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+ }
+ 
+ #logo { 
+   float: left;
+ }
+ 
+ .clear {
+   clear: both;
+ }
+ 
+ /* css for nav */
+ #nav { 
+    background-color: whitesmoke;
+    color: black;
+    width: 100%;
+ 
+}
+.nav {
+    float: right;
+    display: inline-flex;
+   list-style: none;    
+    text-align: left;
+    padding: 20px;
+   margin: 0;
+}
+/* css for nav list */
+.nav li{
+    width: 120px;
+    height: 20px;
+    padding: 12px;
+}
+.nav li a{
+  color: black;
+}
+.nav li a:hover{
+  background-color: gainsboro;
+
+}
+/* css for sub-lists */
+.sub-list{
+  display: none;
+}
+.nav  li:hover .sub-list{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 9px;
+  margin-left: -10px;
+  padding: 20px;
+  height: 50px;
+}
+.nav  li:hover .sub-list ul{
+  display: block;
+}
+.nav  li:hover .sub-list ul li{
+  width: 120px;
+  margin-right: 6px;
+  text-align: left;
+}
+.sub-list1{
+  display: none;
+}
+.nav  li:hover .sub-list1{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 9px;
+  margin-left: -10px;
+  padding: 20px;
+  height: 50px;
+}
+.nav  li:hover .sub-list1 ul{
+  display: block;
+}
+.nav  li:hover .sub-list1 ul li{
+  width: 160px;
+  margin-right: 6px;
+  text-align: left;
+}
+.sub-list2{
+  display: none;
+}
+.nav  li:hover .sub-list2{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 9px;
+  margin-left: -10px;
+  padding: 20px;
+  height: 50px;
+}
+.nav  li:hover .sub-list2 ul{
+  display: block;
+}
+.nav  li:hover .sub-list2 ul li{
+  width: 160px;
+  margin-right: 6px;
+  text-align: left;
+}
+.sub-menu{
+  display: none;
+}
+.nav  li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 9px;
+  margin-left: -10px;
+  padding: 20px;
+  height: 50px;
+}
+.nav  li:hover .sub-menu ul{
+  display: block;
+}
+.nav  li:hover .sub-menu ul li{
+  width: 160px;
+  margin-right: 6px;
+  text-align: left;
+}
+
+.container{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  margin: 80px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 92%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.btn {
+  background-color: turquoise;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/* css for text on image */
+#image-text{ 
+  position: absolute; 
+  top: 50%; 
+  left: 60%; 
+  font-size: 50px;
+  color: whitesmoke; 
+  transform: translate(-30%, -30%); 
+  text-align: right; 
+} 
+#image-text1{
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  color: whitesmoke;
+  transform: translate(-30%, -30%);
+  text-align: right;
+}
+
+
+.bdy{
+  font-family: Arial;
+  text-align: center;
+  font-size: 50px;
+}
+.lnk li{
+  
+  display: inline-flex;
+  list-style: none;    
+  text-align: center;
+  float: center;
+  margin-left: 23%;
+  font-size: 30px;
+  padding: 10px;
+  font-family: Arial;
+}
+.lnk li:hover{
+  background-color: paleturquoise;
+  color: #ddd;
+}
+.lnk .fa{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.lnk a{
+  color: black;
+}
+
+.holiday{
+  text-align: center;
+  font-size: 60px;
+  font-family: Arial;
+  font-weight: 500;
+}
+.holiday-grid{
+  background-color: white;
+  padding: 50px;
+  font-family: Arial;
+  float: left;
+  width: 25%;
+}
+.grid{
+  background-color: paleturquoise;
+  padding: 20px;
+  font-size: 20px;
+}
+.holiday-grid1{
+  background-color: white;
+  padding: 50px;
+  left: 50px;
+  font-family: Arial;
+  float: left;
+  width: 25%;
+}
+.grid1{
+  background-color: paleturquoise;
+  padding: 30px;
+  font-size: 20px;
+}
+.footer {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  background-color:gainsboro;
+  width: 100%;
+  text-align: center;
+}
+.clearfooter {
+  height: 100px;
+  clear: both;
+}
+#popup { 
+  width: 800px; 
+  height: 500px; 
+  background-color: gainsboro;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  box-shadow: 2px 2px 5px 3px white; 
+  padding: 20px;
+}
+.submitId { 
+  position: relative; 
+  top: 30px;  
+}
+marquee{
+  font-size: 30px;
+  color: blue;
+  font-weight: 500;
+  font: sans-serif;
+}
+.h{
+  text-align: center;
+}
+.book_train{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
